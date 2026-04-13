@@ -1,0 +1,10 @@
+first = 0
+second = 1
+
+print(first)
+
+while second <= 50:
+    print(second)
+    next_number = first + second
+    first = second
+    second = next_number
