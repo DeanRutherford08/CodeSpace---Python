@@ -1,0 +1,15 @@
+# Calculate a: -5 + 8 * 6
+result_a = -5 + 8 * 6
+print(result_a)
+
+# Calculate b: (55+9) % 9
+result_b = (55 + 9) % 9
+print(result_b)
+
+# Calculate c: 20 + -3*5 / 8
+result_c = 20 + -3 * 5 / 8
+print(result_c)
+
+# Calculate d: 5 + 15 / 3 * 2 - 8 % 3
+result_d = 5 + 15 / 3 * 2 - 8 % 3
+print(result_d) 
