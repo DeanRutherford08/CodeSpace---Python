@@ -1,0 +1,12 @@
+first = float(input("Input first number: "))
+
+second = float(input("Input second number: "))
+
+third = float(input("Input third number: "))
+
+if first < second < third:
+    print("Increasing order.")
+elif first > second > third:
+    print("Decreasing order.")
+else:
+    print("Neither increasing or decreasing order.")
