@@ -1,0 +1,10 @@
+first_number = input("Input the first number: ")
+
+second_number = input("Input the second number: ")
+
+first_number = float(first_number)
+second_number = float(second_number)
+
+result = first_number / second_number
+
+print("The division of the first number and the second number is:", result)
