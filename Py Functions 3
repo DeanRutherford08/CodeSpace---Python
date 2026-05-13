@@ -1,0 +1,10 @@
+def is_prime(n):
+    if n < 2:
+        return "Not prime"
+    for i in range(2, n):
+        if n % i == 0:
+            return "Not prime"
+    return "Prime"
+
+number = 7
+print(number, "is", is_prime(number))
