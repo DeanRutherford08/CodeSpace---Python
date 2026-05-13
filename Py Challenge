@@ -1,0 +1,40 @@
+import random
+
+def play_game():
+    user_score = 0
+    computer_score = 0
+
+    while True:
+        user = input("Enter a choice (Rock(r), Paper(p), Scissors(s)): ").lower()
+
+        if user not in ['r', 'p', 's']:
+            print("Invalid choice")
+            continue
+
+        choices = ['r', 'p', 's']
+        computer = random.choice(choices)
+
+        names = {'r': 'Rock', 'p': 'Paper', 's': 'Scissors'}
+
+        print("You chose", names[user] + ", the computer chose", names[computer] + ".")
+
+        if user == computer:
+            print("It's a tie!")
+        elif (user == 'r' and computer == 's') or \
+             (user == 'p' and computer == 'r') or \
+             (user == 's' and computer == 'p'):
+            print("You win!")
+            user_score += 1
+        else:
+            print("You lose!")
+            computer_score += 1
+
+        again = input("Play again? (y/n): ").lower()
+        if again != 'y':
+            break
+
+    print("Final Scores:")
+    print("Computer:", computer_score)
+    print("Player:", user_score)
+
+play_game()
