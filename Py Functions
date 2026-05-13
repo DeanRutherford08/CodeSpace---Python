@@ -1,0 +1,14 @@
+def show_list(my_list):
+    print("The content of the list is:", my_list)
+
+def find_max(my_list):
+    max_value = my_list[0]
+    for num in my_list:
+        if num > max_value:
+            max_value = num
+    print("The max value in the list:", max_value)
+
+numbers = [10, 2, 3, 4, 7]
+
+show_list(numbers)
+find_max(numbers)
